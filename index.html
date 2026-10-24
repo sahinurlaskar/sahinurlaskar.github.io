@@ -1,115 +1,459 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sahinur Rahman Laskar</title>
-  <style>
-    /* CSS styles for profile layout */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f7f7f7;
-    }
-
-    h1 {
-      color: #333;
-      text-align: center;
-    }
-
-    .profile {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    img {
-      display: block;
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    h2 {
-      color: #333;
-      text-align: center;
-    }
-
-    h3 {
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #777;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 5px;
-    }
-
-    ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    ul li a:hover {
-      color: #555;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic website of Dr. Sahinur Rahman Laskar, Assistant Professor (Senior Scale), UPES Dehradun. Research in NLP, machine translation, and low-resource language technologies.">
+  <meta name="author" content="Dr. Sahinur Rahman Laskar">
+  <title>Dr. Sahinur Rahman Laskar | Academic Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>.citation-details{margin:.35rem 0 .55rem;color:var(--muted);font-size:.88rem}.citation-details summary{cursor:pointer;color:var(--accent);font-weight:600}.citation-details p{line-height:1.65;margin:.4rem 0}.publication[hidden]{display:none!important}</style>
 </head>
 <body>
-  <div class="profile">
-
-    <img src="m.jpg" alt="Profile Picture">
-
-    <h2>Dr. Sahinur Rahman Laskar</h2>
-    <h3>Assistant Professor (Sr. Scale), UPES, Dehradun, India | NLP Researcher </h3>
-
-
-    <h3>About Me</h3>
-    <p>A Computer Science and Engineering background person. Currently, working as an Assistant Professor in SoCS, UPES, Dehradun. Ph.D (CSE) from NIT Silchar. Research Interests in NLP, LLM, Deep Learning and Machine Learning. Published several International Conferences / Workshops (35), Journals (13), Book Chapters (2) and Patents (2). Preferably, looking for jobs in Academics and R&D.</p>
-
-    <h3>Contact Information</h3>
-    <p>Email: sahinurlaskar.nits@gmail.com / sahinur.laskar@ddn.upes.ac.in / sahinur_rs@cse.nits.ac.in </p>
-    <p>Phone: +91-7002460508</p>
-
-    <h3>Social Media</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/dr-sahinur-rahman-laskar-0683ab1b0" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.facebook.com/ersahinur.laskar/" target="_blank">Facebook</a></li>
-    </ul>
-
-    <h3>Visibility</h3>
-    <ul>
-      <li><a href="https://scholar.google.com/citations?user=fbqD9i8AAAAJ&hl=en&authuser=2" target="_blank">Google Scholar</a></li>
-      <li><a href="https://www.researchgate.net/profile/Sahinur-Laskar" target="_blank">ResearchGate</a></li>
-      <li><a href="https://vidwan.inflibnet.ac.in/profile/414530" target="_blank">VIDWAN</a></li>
-      <li><a href="https://aclanthology.org/people/s/sahinur-rahman-laskar/" target="_blank">ACL Anthology</a></li>
-      <li><a href="https://independent.academia.edu/sahinurlaskar" target="_blank">Academia Edu</a></li>
-      <li><a href="https://dblp.org/pid/247/6547.html" target="_blank">DBLP</a></li>
-      <li><a href="https://ieeexplore.ieee.org/author/37088373605" target="_blank">IEEE Xplore</a></li>
-      <li><a href="https://orcid.org/0000-0002-8413-2718" target="_blank">ORCID</a></li>
-    </ul>
-  </div>
-  <div class="trigger">
-      <!-- CV link -->
-      <a class="page-link" href="https://sahinurlaskar.github.io/resume.pdf"> <h2>My Resume</h2></a>
-      <!-- <a class="page-link" href="https://sahinurlaskar.github.io/resume_short.pdf"> <h2>My Short Resume</h2></a> -->
-      <a class="page-link" href="https://sahinurlaskar.github.io/List_publication_SRL.pdf"> <h2>My List of Publications</h2></a>
-      <a class="page-link" href="https://sahinurlaskar.github.io/Participation-Achievement.pdf"> <h2>Research Participations and Achievements</h2></a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Sahinur Rahman Laskar home">SRL<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="mainNav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+      </nav>
     </div>
-    
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <h1>Dr. Sahinur<br><span>Rahman Laskar</span></h1>
+        <p class="role">Assistant Professor (Senior Scale) and NLP-AI Researcher</p>
+        <p class="affiliation">School of Computer Science · UPES, Dehradun, India</p>
+        <p class="hero-summary">I work on Natural Language Processing, neural machine translation, LLM and language technologies for low-resource and multilingual settings. My research focuses on building language resources and developing practical, data-efficient NLP systems.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications">Explore publications <span>↗</span></a>
+          <a class="button secondary" href="assets/resume.pdf" target="_blank" rel="noopener">View CV <span>↗</span></a>
+        </div>
+        <div class="social-row">
+          <a href="https://scholar.google.com/citations?user=fbqD9i8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-8413-2718" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://github.com/sahinurlaskar" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/dr-sahinur-rahman-laskar-0683ab1b0/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Dr. Sahinur Rahman Laskar" width="506" height="493" fetchpriority="high">
+        <div class="availability"><span class="status-dot"></span> Research, mentoring & collaboration</div>
+        <div class="quick-facts">
+          <div><strong>Research</strong><span>NLP</span></div>
+          <div><strong>Institution</strong><span>UPES, Dehradun, India</span></div>
+          <div><strong>Email</strong><span><a href="mailto:sahinurlaskar.nits@gmail.com">sahinurlaskar.nits@gmail.com</a> / sahinur.laskar@ddn.upes.ac.in</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stats-strip" aria-label="Selected academic highlights">
+      <div><strong>37</strong><span>Conference & workshop papers</span></div>
+      <div><strong>14</strong><span>Journal articles</span></div>
+      <div><strong>2</strong><span>Book Chapters</span></div>
+      <div><strong>2</strong><span>Granted utility patents</span></div>
+      <div><strong>6+</strong><span>Teaching Experience</span></div>
+    </section>
+
+    <section class="section content-section" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>About me</h2></div>
+      <div class="section-body two-col">
+        <div>
+          <p class="lead">I am an academic and researcher in Computer Science and Engineering, currently serving as an Assistant Professor (Senior Scale) at the School of Computer Science, UPES, Dehradun.</p>
+          <p>I completed my Ph.D. in Computer Science and Engineering at the National Institute of Technology Silchar. My academic work spans natural language processing, machine translation, multilingual systems, deep learning, LLM and language-resource development.</p>
+          <p>I am interested in research that makes NLP technologies more effective for languages and communities that are underrepresented in digital resources.</p>
+        </div>
+        <div class="info-panel">
+          <h3>Academic background</h3>
+          <div class="timeline-item"><span class="timeline-date">2019–2023</span><div><strong>Ph.D., Computer Science & Engineering</strong><p>National Institute of Technology Silchar, India</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">2013–2015</span><div><strong>M.Tech., Information Technology</strong><p>Assam University, Silchar, India</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">2007–2011</span><div><strong>B.E., Computer Science & Engineering</strong><p>Assam Engineering College, Guwahati, India</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section tinted" id="research">
+      <div class="section-heading"><p class="eyebrow">02 / RESEARCH</p><h2>Research interests</h2><p class="section-intro">My research explores language understanding and generation across languages, with particular interest in low-resource settings.</p></div>
+      <div class="cards-grid">
+        <article class="research-card"><div class="card-icon">↔</div><h3>Neural Machine Translation</h3><p>Neural and multilingual translation systems, translation evaluation, and methods for improving performance with limited parallel data.</p><div class="tag-row"><span>Low-resource MT</span><span>Multilingual NMT</span></div></article>
+        <article class="research-card"><div class="card-icon">文</div><h3>Language Resources</h3><p>Building parallel corpora, datasets, and benchmarks that support research on underrepresented languages and language pairs.</p><div class="tag-row"><span>Corpus creation</span><span>Benchmarking</span></div></article>
+        <article class="research-card"><div class="card-icon">✳</div><h3>Multilingual NLP & LLMs</h3><p>Applying machine learning and deep learning to multilingual text processing, summarization, question answering, and language applications.</p><div class="tag-row"><span>LLMs</span><span>Text generation</span></div></article>
+        <article class="research-card"><div class="card-icon">⌕</div><h3>Information Retrieval</h3><p>Research on retrieval methods and language-aware systems, including work related to mathematical information retrieval.</p><div class="tag-row"><span>IR</span><span>Semantic similarity</span></div></article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="publications">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Publications</h2><p class="section-intro">14 journal articles, 37 conference/workshop papers, 2 book chapters and 2 granted patents. Use the filters to browse by type.</p></div>
+      <div class="publication-tools">
+        <label class="search-box"><span>⌕</span><input id="publicationSearch" type="search" placeholder="Search all 55 publications…" aria-label="Search all publications"></label>
+        <div class="filter-row" role="group" aria-label="Filter publications">
+          <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="journal">Journals</button><button class="filter" data-filter="conference">Conferences</button><button class="filter" data-filter="chapter">Book chapters</button><button class="filter" data-filter="patent">Patents</button>
+        </div>
+      </div>
+      <div class="publication-list" id="publicationList">
+<article class="publication" data-type="journal">
+      <div class="pub-year">2026 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>A multi-dimensional similarity scoring function for mathematical information retrieval</h3><p class="authors">Malik, A., Dadure, P., &amp; Laskar, Sahinur Rahman.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Malik, A., Dadure, P., &amp; Laskar, Sahinur Rahman. (2026). A multi-dimensional similarity scoring function for mathematical information retrieval. Journal of Intelligent &amp; Fuzzy Systems (SCIE) (Impact Factor: 1.53).  doi:10.1177/18758967261490757</p></details><a class="pub-link" href="https://doi.org/10.1177/18758967261490757" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2025 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>A review of mathematical information retrieval: Bridging symbolic representation and intelligent retrieval</h3><p class="authors">Malik, A., Dadure, P., &amp; Laskar, Sahinur Rahman.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Malik, A., Dadure, P., &amp; Laskar, Sahinur Rahman. (2025). A review of mathematical information retrieval: Bridging symbolic representation and intelligent retrieval. Archives of Computational Methods in Engineering (SCIE) (Impact Factor: 12.1) SJR 2024(2.038)(Q1), 1–35.  doi:https://doi.org/10.1007/s11831-025-10319-3</p></details><a class="pub-link" href="https://doi.org/10.1007/s11831-025-10319-3" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2024 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Cyberbullying detection in a multi-classification codemixed dataset</h3><p class="authors">Sahinur Rahman Laskar, Gupta, G., Badhani, R., &amp; Avenda, D. E. P.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Sahinur Rahman Laskar, Gupta, G., Badhani, R., &amp; Avenda, D. E. P. (2024). Cyberbullying detection in a multi-classification codemixed dataset. Computación y Sistemas (SCOPUS) (Impact Factor: 0.4), SJR 2024(0.178)(Q4), 28(3).  doi:https://doi.org/10.13053/CyS-28-3-4989</p></details><a class="pub-link" href="https://doi.org/10.13053/CyS-28-3-4989" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2023 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Neural machine translation for limited resources english-nyishi pair</h3><p class="authors">Kakum, N., Laskar, Sahinur Rahman, Sambyo, K., &amp; Pakray, P.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Kakum, N., Laskar, Sahinur Rahman, Sambyo, K., &amp; Pakray, P. (2023). Neural machine translation for limited resources english-nyishi pair. Indian Academy of Sciences (Sadhana) (SCIE) (Impact Factor: 1.4) SJR 2024(0.321)(Q2).  doi:https://doi.org/10.1007/s12046-023-02308-8</p></details><a class="pub-link" href="https://doi.org/10.1007/s12046-023-02308-8" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2023 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Addressing data scarcity issue for english–mizo neural machine translation using data augmentation and language model. Journal of Intelligent and Fuzzy Systems (SCIE) (Impact Factor: 1) SJR 2024(0.364)(Q2).  doi:https://doi.org/10.3233/JIFS-235740</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K. (2023). Addressing data scarcity issue for english–mizo neural machine translation using data augmentation and language model. Journal of Intelligent and Fuzzy Systems (SCIE) (Impact Factor: 1) SJR 2024(0.364)(Q2).  doi:https://doi.org/10.3233/JIFS-235740</p></details><a class="pub-link" href="https://doi.org/10.3233/JIFS-235740" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2023 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Multimodal text summarization with evaluation approaches</h3><p class="authors">Khilji, A. F. U. R., Sinha, U., Singh, P., Ali, A., Laskar, Sahinur Rahman, Dadure, P., . . . Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khilji, A. F. U. R., Sinha, U., Singh, P., Ali, A., Laskar, Sahinur Rahman, Dadure, P., . . . Bandyopadhyay, S. (2023). Multimodal text summarization with evaluation approaches. Indian Academy of Sciences (Sadhana) (SCIE) (Impact Factor: 1.4) SJR 2024(0.321)(Q2).  doi:https://doi.org/10.1007/s12046-023-02284-z</p></details><a class="pub-link" href="https://doi.org/10.1007/s12046-023-02284-z" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2023 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>English-assamese neural machine translation using prior alignment and pre-trained language model</h3><p class="authors">Laskar, Sahinur Rahman, Paul, B., Dadure, P., Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Paul, B., Dadure, P., Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2023). English-assamese neural machine translation using prior alignment and pre-trained language model. Computer Speech Language Journal (SCIE) (Impact Factor: 3.4 SJR 2024(0.778)(Q2)).  doi:https://doi.org/10.1016/j.csl.2023.101524</p></details><a class="pub-link" href="https://doi.org/10.1016/j.csl.2023.101524" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2023 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>English-assamese multimodal neural machine translation using transliteration-based phrase augmentation approach. Procedia Computer Science Journal (SCOPUS) SJR 2024(0.471), 218, 979–988.  doi:https://doi.org/10.1016/j.procs.2023.01.078</h3><p class="authors">Laskar, Sahinur Rahman, Paul, B., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Paul, B., Pakray, P., &amp; Bandyopadhyay, S. (2023). English-assamese multimodal neural machine translation using transliteration-based phrase augmentation approach. Procedia Computer Science Journal (SCOPUS) SJR 2024(0.471), 218, 979–988.  doi:https://doi.org/10.1016/j.procs.2023.01.078</p></details><a class="pub-link" href="https://doi.org/10.1016/j.procs.2023.01.078" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2022 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Machine translation for low-resource english–mizo pair encountering tonal words</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K. (2022). Machine translation for low-resource english–mizo pair encountering tonal words. Computación y Sistemas (SCOPUS) (Impact Factor: 0.4) SJR 2024(0.178)(Q4), 26(3). Retrieved from  https://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/viewFile/4358/3432</p></details><a class="pub-link" href="https://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/viewFile/4358/3432" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2022 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Improved neural machine translation for low-resource english-assamese pair</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2022). Improved neural machine translation for low-resource english-assamese pair. Journal of Intelligent Fuzzy Systems (SCIE) (Impact Factor: 1) SJR 2024(0.364)(Q2), 42, 4727–4738.  doi:https://doi.org/10.3233/JIFS-219260</p></details><a class="pub-link" href="https://doi.org/10.3233/JIFS-219260" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2022a <span>JOURNAL</span></div><div class="pub-content">
+      <h3>A domain specific parallel corpus and enhanced english- assamese neural machine translation</h3><p class="authors">Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2022a). A domain specific parallel corpus and enhanced english- assamese neural machine translation. Computación y Sistemas (SCOPUS) (Impact Factor: 0.4) SJR 2024(0.178)(Q4), 26(4). Retrieved from  https://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/4423/3457</p></details><a class="pub-link" href="https://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/4423/3457" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2022 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Investigation of negation eﬀect for english–assamese machine translation</h3><p class="authors">Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2022). Investigation of negation eﬀect for english–assamese machine translation. Indian Academy of Sciences (Sadhana) (SCIE) (Impact Factor: 1.4) SJR 2024(0.321)(Q2), 47(4), 1–11.  doi:https://doi.org/10.1007/s12046-022-01965-5</p></details><a class="pub-link" href="https://doi.org/10.1007/s12046-022-01965-5" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2021 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>CookingQA: Answering questions and recommending recipes based on ingredients</h3><p class="authors">Khilji, A. F. U. R., Manna, R., Laskar, Sahinur Rahman, Pakray, P., Das, D., Bandyopadhyay, S., &amp; Gelbukh, A.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khilji, A. F. U. R., Manna, R., Laskar, Sahinur Rahman, Pakray, P., Das, D., Bandyopadhyay, S., &amp; Gelbukh, A. (2021). CookingQA: Answering questions and recommending recipes based on ingredients. Arabian Journal for Science and Engineering (SCIE) (Impact Factor: 2.9) SJR 2024(0.521)(Q1), 46(4), 3701–3712.  doi:https://doi.org/10.1007/s13369-020-05236-5</p></details><a class="pub-link" href="https://doi.org/10.1007/s13369-020-05236-5" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="journal">
+      <div class="pub-year">2020 <span>JOURNAL</span></div><div class="pub-content">
+      <h3>Question classification and answer extraction for developing a cooking qa system</h3><p class="authors">Rahman Khilji, A. F. U., Manna, R., Laskar, Sahinur Rahman, Pakray, P., Das, D., Bandyopadhyay, S., &amp; Gelbukh, A.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Rahman Khilji, A. F. U., Manna, R., Laskar, Sahinur Rahman, Pakray, P., Das, D., Bandyopadhyay, S., &amp; Gelbukh, A. (2020). Question classification and answer extraction for developing a cooking qa system. Computación y Sistemas (SCOPUS) (Impact Factor: 0.4) SJR 2024(0.178)(Q4), 24(2), 927–933.  doi:https://doi.org/10.13053/cys-24-2-3445</p></details><a class="pub-link" href="https://doi.org/10.13053/cys-24-2-3445" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2026 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Overview of cross lingual mathematical information retrieval at fire 2025</h3><p class="authors">Dadure, P., Malik, A., &amp; Laskar, Sahinur Rahman.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Dadure, P., Malik, A., &amp; Laskar, Sahinur Rahman. (2026). Overview of cross lingual mathematical information retrieval at fire 2025. In Proceedings of the 17th annual meeting of the forum for information retrieval evaluation (pp. 44–47).  doi:10.1145/3777867.3778263</p></details><a class="pub-link" href="https://doi.org/10.1145/3777867.3778263" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2026 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>NERDS-NITS at WMT 2026: Pivot-based and direct neural machine translation for arabic–asian low-resource language pairs</h3><p class="authors">Karim, M., Ahmed, F., Al Islam, M., Laskar, Sahinur Rahman, &amp; Laskar, R. H.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Karim, M., Ahmed, F., Al Islam, M., Laskar, Sahinur Rahman, &amp; Laskar, R. H. (2026). NERDS-NITS at WMT 2026: Pivot-based and direct neural machine translation for arabic–asian low-resource language pairs. In Proceedings of the eleventh conference on machine translation (pp. 2325–2330). Association for Computational Linguistics. Retrieved from  https://www2.statmt.org/wmt26/pdf/2026.wmt-1.173.pdf</p></details><a class="pub-link" href="https://www2.statmt.org/wmt26/pdf/2026.wmt-1.173.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2026 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Findings of the WMT 2026 shared task on low-resource arabic-asian language translation</h3><p class="authors">Laskar, Sahinur Rahman, Alam, F., Paul, B., Ahmad, I., Lydia, M. S., &amp; Dadure, P.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Alam, F., Paul, B., Ahmad, I., Lydia, M. S., &amp; Dadure, P. (2026). Findings of the WMT 2026 shared task on low-resource arabic-asian language translation. In Proceedings of the eleventh conference on machine translation (pp. 1124–1137). Association for Computational Linguistics. Retrieved from  https://www2.statmt.org/wmt26/pdf/2026.wmt-1.54.pdf</p></details><a class="pub-link" href="https://www2.statmt.org/wmt26/pdf/2026.wmt-1.54.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2026 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Argynnet: Arabic gynecological disease classification using hybrid deep network</h3><p class="authors">Laskar, Sahinur Rahman, Laskar, A., Ahsan, M., Biran, A., &amp; Ranjan, R.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Laskar, A., Ahsan, M., Biran, A., &amp; Ranjan, R. (2026). Argynnet: Arabic gynecological disease classification using hybrid deep network. In 2026 ieee 18th international conference on computational intelligence and communication networks (cicn) (pp. 1582–1587).  doi:10.1109/CICN70047.2026.11594132</p></details><a class="pub-link" href="https://doi.org/10.1109/CICN70047.2026.11594132" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2025 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Bahash-AI at BLP-2025 task 1: Bangla hate speech detection using data augmentation and pre-trained model</h3><p class="authors">Laskar, Sahinur Rahman, &amp; Paul, B.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, &amp; Paul, B. (2025). Bahash-AI at BLP-2025 task 1: Bangla hate speech detection using data augmentation and pre-trained model. In F. Alam, S. Kar, S. A. Chowdhury, N. Hassan, E. H. Prince, M. Tasnim, . . . M. T. R. Rahman (Eds.), Proceedings of the second workshop on bangla language processing (blp-2025) (pp. 402–407). Mumbai, India: Association for Computational Linguistics. Retrieved from  https://aclanthology.org/2025.banglalp-1.33/</p></details><a class="pub-link" href="https://aclanthology.org/2025.banglalp-1.33/" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2025 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>NativQA: Multilingual culturally-aligned natural query for LLMs</h3><p class="authors">Hasan, M. A., Hasanain, M., Ahmad, F., Laskar, Sahinur Rahman, Upadhyay, S., Sukhadia, V. N., . . . Alam, F.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Hasan, M. A., Hasanain, M., Ahmad, F., Laskar, Sahinur Rahman, Upadhyay, S., Sukhadia, V. N., . . . Alam, F. (2025). NativQA: Multilingual culturally-aligned natural query for LLMs. In W. Che, J. Nabende, E. Shutova, &amp; M. T. Pilehvar (Eds.), Findings of the association for computational linguistics: Acl 2025 (pp. 14886–14909). Vienna, Austria: Association for Computational Linguistics. Retrieved from  https://aclanthology.org/2025.findings-acl.770/</p></details><a class="pub-link" href="https://aclanthology.org/2025.findings-acl.770/" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2025 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>LlamaLens: Specialized multilingual LLM for analyzing news and social media content</h3><p class="authors">Kmainasi, M. B., Shahroor, A. E., Hasanain, M., Laskar, Sahinur Rahman, Hassan, N., &amp; Alam, F.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Kmainasi, M. B., Shahroor, A. E., Hasanain, M., Laskar, Sahinur Rahman, Hassan, N., &amp; Alam, F. (2025). LlamaLens: Specialized multilingual LLM for analyzing news and social media content. In L. Chiruzzo, A. Ritter, &amp; L. Wang (Eds.), Findings of the association for computational linguistics: Naacl 2025 (pp. 5627–5649). Albuquerque, New Mexico: Association for Computational Linguistics. Retrieved from  https://aclanthology.org/2025.findings-naacl.313/</p></details><a class="pub-link" href="https://aclanthology.org/2025.findings-naacl.313/" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2025 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Hindgk: A llm-based question answering system for hindi general knowledge</h3><p class="authors">Laskar, Sahinur Rahman, Deepanshu, Saxena, D., Badhani, R., Vishwakarma, A. K., &amp; Ranjan, R.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Deepanshu, Saxena, D., Badhani, R., Vishwakarma, A. K., &amp; Ranjan, R. (2025). Hindgk: A llm-based question answering system for hindi general knowledge. In 2025 ieee 17th international conference on computational intelligence and communication networks (cicn) (pp. 485–489).  doi:10.1109/CICN67655.2025.11368192</p></details><a class="pub-link" href="https://doi.org/10.1109/CICN67655.2025.11368192" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2023 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Findings of the wmt 2023 shared task on low-resource indic language translation</h3><p class="authors">Pal, S., Pakray, P., Laskar, Sahinur Rahman, Dash, S. K., Laitonjam, L., Khenglawt, V., . . . Dadure, P. K.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Pal, S., Pakray, P., Laskar, Sahinur Rahman, Dash, S. K., Laitonjam, L., Khenglawt, V., . . . Dadure, P. K. (2023). Findings of the wmt 2023 shared task on low-resource indic language translation. In Proceedings of the eighth conference on machine translation. Association for Computational Linguistics, Singapore. Retrieved from  https://www2.statmt.org/wmt23/pdf/2023.wmt-1.56.pdf</p></details><a class="pub-link" href="https://www2.statmt.org/wmt23/pdf/2023.wmt-1.56.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Exploring text summarization models for indian languages</h3><p class="authors">Chakraborty, S., Kaushik, D., Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Chakraborty, S., Kaushik, D., Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2022). Exploring text summarization models for indian languages. In Forum for information retrieval evaluation, ceur workshop proceedings (pp. 1–6). India. Retrieved from  https://ceur-ws.org/Vol-3395/T6-9.pdf</p></details><a class="pub-link" href="https://ceur-ws.org/Vol-3395/T6-9.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Ontology-based healthcare hierarchy towards chatbot</h3><p class="authors">Adhikary, P. K., Manna, R., Laskar, Sahinur Rahman, &amp; Pakray, P.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Adhikary, P. K., Manna, R., Laskar, Sahinur Rahman, &amp; Pakray, P. (2022). Ontology-based healthcare hierarchy towards chatbot. In Computational intelligence in communications and business analytics, crc press (pp. 326–335).  doi:https://doi.org/10.1007/978-3-031-10766-5_26</p></details><a class="pub-link" href="https://doi.org/10.1007/978-3-031-10766-5_26" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022a <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Mizo visual genome 1.0: A dataset for english-mizo multimodal neural machine translation</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Kumar Khan, A.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Kumar Khan, A. (2022a). Mizo visual genome 1.0: A dataset for english-mizo multimodal neural machine translation. In Artificial intelligence, data science computing, ieee silcon 2022.  doi:10.1109/SILCON55242.2022.10028882</p></details><a class="pub-link" href="https://doi.org/10.1109/SILCON55242.2022.10028882" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022b <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Recent trends on low-resource neural machine translation and research scope for english-mizo pair</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Kumar Khan, A.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Kumar Khan, A. (2022b). Recent trends on low-resource neural machine translation and research scope for english-mizo pair. In International conference on intelligent computing systems and applications, springer, 2022. (Accepted) (In press).</p></details>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Language resource building and english-to-mizo neural machine translation encountering tonal words</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Pal, S., Pakray, P., &amp; Khan, A. K.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Pal, S., Pakray, P., &amp; Khan, A. K. (2022). Language resource building and english-to-mizo neural machine translation encountering tonal words. In Proceedings of the wildre-6 workshop @lrec2020, marseille, european language resources association (elra) (pp. 48–54). Retrieved from  http://www.lrec- conf.org/proceedings/lrec2022/workshops/WILDRE6/pdf/2022.wildre6-1.9.pdf</p></details><a class="pub-link" href="http://www.lrec-" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>English to bengali multimodal neural machine translation using transliteration-based phrase pairs augmentation. In 9th workshop on asian translation wat2022, colling</h3><p class="authors">Laskar, Sahinur Rahman, Dadure, P., Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Dadure, P., Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2022). English to bengali multimodal neural machine translation using transliteration-based phrase pairs augmentation. In 9th workshop on asian translation wat2022, colling. Retrieved from  https://aclanthology.org/2022.wat-1.14.pdf</p></details><a class="pub-link" href="https://aclanthology.org/2022.wat-1.14.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022b <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Investigation of multilingual neural machine translation for indian languages</h3><p class="authors">Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2022b). Investigation of multilingual neural machine translation for indian languages. In 9th workshop on asian translation wat2022, colling. ACL. Retrieved from  https://aclanthology.org/2022.wat-1.9.pdf</p></details><a class="pub-link" href="https://aclanthology.org/2022.wat-1.9.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Improving english-assamese neural machine translation using transliteration-based approach</h3><p class="authors">Laskar, Sahinur Rahman, Paul, B., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Paul, B., Pakray, P., &amp; Bandyopadhyay, S. (2022). Improving english-assamese neural machine translation using transliteration-based approach. In Proceedings of the international conference on frontiers of intelligent computing: Theory and applications, ficta 2022.  doi:https://doi.org/10.1007/978-981-19-7513-4_20</p></details><a class="pub-link" href="https://doi.org/10.1007/978-981-19-7513-4_20" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Investigation of english to hindi multimodal neural machine translation using transliteration-based phrase pairs augmentation</h3><p class="authors">Laskar, Sahinur Rahman, Singh, R., Karim, M. F., Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Singh, R., Karim, M. F., Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2022). Investigation of english to hindi multimodal neural machine translation using transliteration-based phrase pairs augmentation. In 9th workshop on asian translation wat2022, colling. Retrieved from  https://aclanthology.org/2022.wat-1.15.pdf</p></details><a class="pub-link" href="https://aclanthology.org/2022.wat-1.15.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Cnlp-nits-pp at wanlp 2022 shared task: Propaganda detection in arabic using data augmentation and arabert pre-trained model</h3><p class="authors">Laskar, Sahinur Rahman, Singh, R., Manna, R., Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Singh, R., Manna, R., Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2022). Cnlp-nits-pp at wanlp 2022 shared task: Propaganda detection in arabic using data augmentation and arabert pre-trained model. In Emnlp 2022 propaganda detection in arabic shared task, wanlp-22. ACL. Retrieved from  https://aclanthology.org/2022.wanlp-1.65.pdf</p></details><a class="pub-link" href="https://aclanthology.org/2022.wanlp-1.65.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2022 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Cnlp-nits-pp at mixmt 2022: Hinglish-english code-mixed machine translation</h3><p class="authors">Laskar, Sahinur Rahman, Singh, R., Manna, R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Singh, R., Manna, R., Pakray, P., &amp; Bandyopadhyay, S. (2022). Cnlp-nits-pp at mixmt 2022: Hinglish-english code-mixed machine translation. In Emnlp 2022 seventh conference on machine translation (wmt22). ACL. Retrieved from  https://www.statmt.org/wmt22/pdf/2022.wmt-1.116.pdf</p></details><a class="pub-link" href="https://www.statmt.org/wmt22/pdf/2022.wmt-1.116.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Enkhcorp1. 0: An english–khasi corpus</h3><p class="authors">Laskar, Sahinur Rahman, Darsh, A. F. U. R. K., Pakray, P., Bandyopadhyay, S. et al.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Darsh, A. F. U. R. K., Pakray, P., Bandyopadhyay, S. et al. (2021). Enkhcorp1. 0: An english–khasi corpus. In Proceedings of the 4th workshop on technologies for mt of low resource languages (loresmt2021), mtsummit (pp. 89–95). Retrieved from  https://aclanthology.org/2021.mtsummit-loresmt.9</p></details><a class="pub-link" href="https://aclanthology.org/2021.mtsummit-loresmt.9" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Improved english to hindi multimodal neural machine translation</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Kaushik, D., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Kaushik, D., Pakray, P., &amp; Bandyopadhyay, S. (2021). Improved english to hindi multimodal neural machine translation. In Proceedings of the 8th workshop on asian translation (wat2021), ĳcnlp (pp. 155–160). ACL.  doi:https://doi.org/10.18653/v1/2021.wat-1.17</p></details><a class="pub-link" href="https://doi.org/10.18653/v1/2021.wat-1.17" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021a <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Neural machine translation for low resource assamese–english</h3><p class="authors">Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2021a). Neural machine translation for low resource assamese–english. In Proceedings of the international conference on computing and communication systems: I3cs 2020, nehu, shillong, india (Vol. 170, p. 35). Springer.  doi:https://doi.org/10.1007/978-981-33-4084-8_4</p></details><a class="pub-link" href="https://doi.org/10.1007/978-981-33-4084-8_4" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021b <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Neural machine translation: Assamese–bengali</h3><p class="authors">Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2021b). Neural machine translation: Assamese–bengali. In Modeling, simulation and optimization: Proceedings of comso 2020 (pp. 571–579). Springer.  doi:https://doi.org/10.1007/978-981-15-9829-6_45</p></details><a class="pub-link" href="https://doi.org/10.1007/978-981-15-9829-6_45" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Neural machine translation for tamil–telugu pair</h3><p class="authors">Laskar, Sahinur Rahman, Paul, B., Adhikary, P. K., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Paul, B., Adhikary, P. K., Pakray, P., &amp; Bandyopadhyay, S. (2021). Neural machine translation for tamil–telugu pair. In Proceedings of the sixth conference on machine translation (wmt), emnlp (pp. 289–292). ACL. Retrieved from  https://aclanthology.org/2021.wmt-1.29</p></details><a class="pub-link" href="https://aclanthology.org/2021.wmt-1.29" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2021 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Multimodal neural machine translation for english-assamese pair</h3><p class="authors">Laskar, Sahinur Rahman, Paul, B., Paudwal, S., Gautam, P., Biswas, N., &amp; Pakray, P.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Paul, B., Paudwal, S., Gautam, P., Biswas, N., &amp; Pakray, P. (2021). Multimodal neural machine translation for english-assamese pair. In 2021 international conference on computational performance evaluation (compe) (pp. 387–392). IEEE.  doi:https://doi.org/10.1109/ComPE53109.2021.9752181</p></details><a class="pub-link" href="https://doi.org/10.1109/ComPE53109.2021.9752181" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020a <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>EnAsCorp1.0: English-Assamese corpus</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2020a). EnAsCorp1.0: English-Assamese corpus. In Proceedings of the 3rd workshop on technologies for mt of low resource languages, aacl (pp. 62–68). ACL. Suzhou, China. Retrieved from  https://aclanthology.org/2020.loresmt-1.9</p></details><a class="pub-link" href="https://aclanthology.org/2020.loresmt-1.9" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020b <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Multimodal neural machine translation for English to Hindi</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2020b). Multimodal neural machine translation for English to Hindi. In Proceedings of the 7th workshop on asian translation, aacl (pp. 109–113). ACL. Suzhou, China. Retrieved from  https://aclanthology.org/2020.wat-1.11</p></details><a class="pub-link" href="https://aclanthology.org/2020.wat-1.11" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Urdu fake news detection using generalized autoregressors</h3><p class="authors">Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2020). Urdu fake news detection using generalized autoregressors. In Ceur workshop proceedings, forum for information retrieval evaluation 2020, december 16-20, 2020, hyderabad, India. CEUR-WS. Retrieved from  http://ceur-ws.org/Vol-2826/T3-3.pdf</p></details><a class="pub-link" href="http://ceur-ws.org/Vol-2826/T3-3.pdf" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Healfavor: Dataset and a prototype system for healthcare chatbot</h3><p class="authors">Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S. (2020). Healfavor: Dataset and a prototype system for healthcare chatbot. In 2020 international conference on data science, artificial intelligence, and business analytics (databia) (pp. 1–4). IEEE.  doi:https://doi.org/10.1109/DATABIA50434.2020.9190281</p></details><a class="pub-link" href="https://doi.org/10.1109/DATABIA50434.2020.9190281" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020c <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Hindi-marathi cross lingual model</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2020c). Hindi-marathi cross lingual model. In Proceedings of the fifth conference on machine translation (pp. 396–401). ACL. Retrieved from  https://aclanthology.org/2020.wmt-1.45</p></details><a class="pub-link" href="https://aclanthology.org/2020.wmt-1.45" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2020d <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Zero-shot neural machine translation: Russian-hindi@ loresmt 2020</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., &amp; Bandyopadhyay, S. (2020d). Zero-shot neural machine translation: Russian-hindi@ loresmt 2020. In Proceedings of the 3rd workshop on technologies for mt of low resource languages, aacl (pp. 38–42). ACL. Retrieved from  https://aclanthology.org/2020.loresmt-1.5</p></details><a class="pub-link" href="https://aclanthology.org/2020.loresmt-1.5" target="_blank" rel="noopener">PAPER / PROCEEDINGS ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2019 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Neural machine translation: English to hindi</h3><p class="authors">Laskar, Sahinur Rahman, Dutta, A., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Dutta, A., Pakray, P., &amp; Bandyopadhyay, S. (2019). Neural machine translation: English to hindi. In 2019 ieee conference on information and communication technology (pp. 1–6). IEEE.  doi:https://doi.org/10.1109/CICT48419.2019.9066238</p></details><a class="pub-link" href="https://doi.org/10.1109/CICT48419.2019.9066238" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2019 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Neural machine translation: Hindi-nepali</h3><p class="authors">Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Pakray, P., &amp; Bandyopadhyay, S. (2019). Neural machine translation: Hindi-nepali. In Proceedings of the fourth conference on machine translation (volume 3) (pp. 202–207). ACL.  doi:https://doi.org/10.18653/v1/W19-5427</p></details><a class="pub-link" href="https://doi.org/10.18653/v1/W19-5427" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2019 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>English to hindi multi-modal neural machine translation and hindi image captioning</h3><p class="authors">Laskar, Sahinur Rahman, Singh, R. P., Pakray, P., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Singh, R. P., Pakray, P., &amp; Bandyopadhyay, S. (2019). English to hindi multi-modal neural machine translation and hindi image captioning. In Proceedings of the 6th workshop on asian translation, emnlp (pp. 62–67). ACL.  doi:https://doi.org/10.18653/v1/D19-5205</p></details><a class="pub-link" href="https://doi.org/10.18653/v1/D19-5205" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2016 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Documents clustering using quantum clustering algorithm</h3><p class="authors">Bhagawati, R., Laskar, Sahinur Rahman, &amp; Swain, B.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Bhagawati, R., Laskar, Sahinur Rahman, &amp; Swain, B. (2016). Documents clustering using quantum clustering algorithm. In 2016 international conference on microelectronics, computing and communications (microcom) (pp. 1–4). IEEE.  doi:https://doi.org/10.1109/MicroCom.2016.7522562</p></details><a class="pub-link" href="https://doi.org/10.1109/MicroCom.2016.7522562" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="conference">
+      <div class="pub-year">2015 <span>CONFERENCE / WORKSHOP</span></div><div class="pub-content">
+      <h3>Analyzing quantum probability ranking principle with the concept of hyperspace analogue to language (hal)</h3><p class="authors">Laskar, Sahinur Rahman, &amp; Swain, B.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, &amp; Swain, B. (2015). Analyzing quantum probability ranking principle with the concept of hyperspace analogue to language (hal). In 2015 international symposium on advanced computing and communication (isacc) (pp. 266–271). IEEE.  doi:https://doi.org/10.1109/ISACC.2015.7377353</p></details><a class="pub-link" href="https://doi.org/10.1109/ISACC.2015.7377353" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="patent">
+      <div class="pub-year">2022 <span>PATENT</span></div><div class="pub-content">
+      <h3>System zur Vorbereitung und Untersuchung eines Englisch-Mizo-Korpus durch Auffinden von tonalen Wörtern</h3><p class="authors">Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khenglawt, V., Laskar, Sahinur Rahman, Pakray, P., &amp; Khan, A. K. (2022). “System zur Vorbereitung und Untersuchung eines Englisch-Mizo-Korpus durch Auffinden von tonalen Wörtern” (System for Preparing and Investigating an English-Mizo Corpus by Encountering Tonal Words). German Utility Patent, 03 August 2022 (Status: Granted).</p></details>
+      </div></article>
+<article class="publication" data-type="patent">
+      <div class="pub-year">2022 <span>PATENT</span></div><div class="pub-content">
+      <h3>Ein System zur Beantwortung von Fragen und zur Empfehlung von Rezepten auf der Grundlage von Zutaten</h3><p class="authors">Pakray, P., Manna, R., Khilji, A. F. U. R., Laskar, Sahinur Rahman, Das, D., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Pakray, P., Manna, R., Khilji, A. F. U. R., Laskar, Sahinur Rahman, Das, D., &amp; Bandyopadhyay, S. (2022). “Ein System zur Beantwortung von Fragen und zur Empfehlung von Rezepten auf der Grundlage von Zutaten” (A System on Answering Questions and Recommending Recipes based on Ingredients). German Utility Patent, 09 September 2022 (Status: Granted).</p></details>
+      </div></article>
+<article class="publication" data-type="chapter">
+      <div class="pub-year">2022 <span>BOOK CHAPTER</span></div><div class="pub-content">
+      <h3>Healfavor: Machine translation enabled healthcare chat based application</h3><p class="authors">Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Laskar, Sahinur Rahman, Khilji, A. F. U. R., Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S. (2022). Healfavor: Machine translation enabled healthcare chat based application. doi:https://doi.org/10.1201/9781003138013-6</p></details><a class="pub-link" href="https://doi.org/10.1201/9781003138013-6" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+<article class="publication" data-type="chapter">
+      <div class="pub-year">2021 <span>BOOK CHAPTER</span></div><div class="pub-content">
+      <h3>Healfavor: A chatbot application in healthcare</h3><p class="authors">Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S.</p>
+      <details class="citation-details"><summary>Full citation</summary><p>Khilji, A. F. U. R., Laskar, Sahinur Rahman, Pakray, P., Kadir, R. A., Lydia, M. S., &amp; Bandyopadhyay, S. (2021). Healfavor: A chatbot application in healthcare. doi:https://doi.org/10.1201/9781003146810-3</p></details><a class="pub-link" href="https://doi.org/10.1201/9781003146810-3" target="_blank" rel="noopener">DOI / PAPER ↗</a>
+      </div></article>
+      </div>
+      <div class="center-action"><a class="button secondary" href="assets/resume.pdf" target="_blank" rel="noopener">Open full CV ↗</a></div>
+    </section>
+
+    <section class="section content-section tinted" id="experience">
+      <div class="section-heading"><p class="eyebrow">04 / CAREER</p><h2>Experience</h2></div>
+      <div class="experience-layout">
+        <div><h3 class="subheading">Professional experience</h3>
+          <div class="timeline-item"><span class="timeline-date">2023–Present</span><div><strong>Assistant Professor (Senior Scale)</strong><p>School of Computer Science, UPES, Dehradun, India</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">2012-2013, 2016-2018</span><div><strong>Guest Faculty / Lecturer</strong><p>Assam University, Silchar, and an affiliated college</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">2015–2016</span><div><strong>Junior Research Fellow</strong><p>Assam University, Silchar, India</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="activities">
+      <div class="section-heading"><p class="eyebrow">05 / COMMUNITY</p><h2>Research activities & recognition</h2><p class="section-intro">Shared task organization, invited talks, shared task participation, and awards.</p></div>
+      <h3 class="activity-group-title">Shared Task Organizer</h3>
+      <div class="activity-grid">
+        <article class="activity-card"><span class="activity-year">2026</span><h3>Lead Organizer</h3><p>Low-Resource Arabic-Asian Language Translation shared task at WMT 2026 (EMNLP).</p><a href="https://www2.statmt.org/wmt26/arabic-asian-mt-task.html" target="_blank" rel="noopener">Task website ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2025</span><h3>Organizer</h3><p>Cross-Lingual Mathematical Information Retrieval (CLMIR) shared task at FIRE 2025.</p><a href="https://clmir2025.github.io/" target="_blank" rel="noopener">Task website ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2023</span><h3>Organizer</h3><p>Low-Resource Indic Language Translation shared task at WMT 2023 (EMNLP).</p><a href="https://www2.statmt.org/wmt23/indic-mt-task.html" target="_blank" rel="noopener">Task website ↗</a></article>
+      </div>
+      <h3 class="activity-group-title">Guest Speaker</h3>
+      <div class="activity-grid">
+        <article class="activity-card"><span class="activity-year">2026</span><h3>Resource Person</h3><p>Faculty Development Programme “Machine Learning for Social Good: Applications in Healthcare, Education and Smart Cities” (29 June – 3 July 2026), organized by IEM, Kolkata.</p></article>
+        <article class="activity-card"><span class="activity-year">2025</span><h3>Guest Speaker</h3><p>“AI Reboot: Revisiting Foundations and Frontiers” international webinar series — NLP applications, tools and techniques (27 July 2025). Organized by IEEE Computer Society Student Branch Chapter, UPES, Dehradun.</p></article>
+        <article class="activity-card"><span class="activity-year">2021</span><h3>Guest Speaker</h3><p>Demonstration of Deep Learning for Machine Translation (29 June 2021) at the Faculty Development Program on Deep Learning for NLP (DL-NLP 2021), Jaypee Institute of Information Technology, Noida.</p></article>
+      </div>
+      <h3 class="activity-group-title">Shared Task Participation</h3>
+      <div class="activity-grid">
+        <article class="activity-card"><span class="activity-year">2022</span><h3>Rank 3 · WANLP / EMNLP 2022</h3><p>Propaganda Detection in Arabic, subtask 1 (team CNLP-NITS-PP).</p><a href="https://sites.google.com/view/propaganda-detection-in-arabic/results" target="_blank" rel="noopener">Results ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2022</span><h3>Best Results · WAT2022</h3><p>Multi-Modal Translation Task, English to Bengali (team CNLP-NITS-PP).</p><a href="http://lotus.kuee.kyoto-u.ac.jp/WAT/evaluation/list.php?t=235&amp;o=7" target="_blank" rel="noopener">Results ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2022</span><h3>Second Best · WAT2022</h3><p>Multi-Modal Translation Task, English to Hindi (team CNLP-NITS-PP).</p><a href="http://lotus.kuee.kyoto-u.ac.jp/WAT/evaluation/list.php?t=96&amp;o=7" target="_blank" rel="noopener">Results ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2020</span><h3>Rank 2 · FIRE 2020</h3><p>Fake News Detection in the Urdu Language (UrduFake), team CNLP-NITS.</p></article>
+        <article class="activity-card"><span class="activity-year">2020</span><h3>WMT 2020</h3><p>Similar Language Translation (team NITS-CNLP): 10th rank Hindi→Marathi, 15th rank Marathi→Hindi.</p></article>
+        <article class="activity-card"><span class="activity-year">2019</span><h3>Rank 1 · WMT 2019</h3><p>Similar Language Translation: first rank for Hindi→Nepali and Nepali→Hindi (team NITS-CNLP).</p><a href="https://aclanthology.org/W19-5427/" target="_blank" rel="noopener">Paper ↗</a></article>
+        <article class="activity-card"><span class="activity-year">2019</span><h3>Rank 1 · WAT2019</h3><p>Multi-Modal Translation Task (team 683).</p></article>
+      </div>
+      <h3 class="activity-group-title">Award</h3>
+      <div class="activity-grid">
+        <article class="activity-card"><span class="activity-year">2022</span><h3>Best Paper Award Presenter</h3><p>FICTA 2022, NIT Mizoram, India — “Improving English-Assamese Neural Machine Translation using Transliteration-based Approach”.</p></article>
+      </div>
+    </section>
+
+    <section class="section content-section tinted" id="service">
+      <div class="section-heading"><p class="eyebrow">06 / SERVICE</p><h2>Academic service & mentorship</h2></div>
+      <div class="two-col service-layout">
+        <div class="service-block"><h3>Journal reviewing</h3><p>Reviewer for journals including:</p><ul class="clean-list"><li>ACM Computing Surveys</li><li>Language Resources and Evaluation</li><li>Transactions on Asian and Low-Resource Language Information Processing</li><li>Natural Language Engineering</li><li>Journal of Experimental and Theoretical Artificial Intelligence</li></ul><p class="muted">Additional conference reviewing activities are listed in the full CV.</p></div>
+        <div class="service-block"><h3>Student mentorship</h3><p>Supervision and project guidance in areas including:</p><ul class="clean-list"><li>Mathematical information retrieval (Ph.D. co-supervision Since 2024)</li><li>Low-resource news categorization (M.Tech. 2025-26)</li><li>Code-mixed cyberbullying detection  (M.Tech. 2024-25)</li><li>Hindi general-knowledge question answering using LLMs (B.Tech. 2025)</li><p class="muted">Additional mentorships are listed in the full CV.</p></ul></div>
+        <div class="service-block" style="grid-column:1/-1"><h3>Membership – professional bodies</h3><ul class="clean-list"><li>Senior Member, IEEE</li><li>Natural Language Processing Association of India (NLPAI)</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="profiles">
+      <div class="section-heading"><p class="eyebrow">07 / ELSEWHERE</p><h2>Academic profiles</h2></div>
+      <div class="profile-grid">
+        <a href="https://scholar.google.com/citations?user=fbqD9i8AAAAJ&hl=en" target="_blank" rel="noopener"><span>Google Scholar</span><b>↗</b><small>Publications and citation profile</small></a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57216695235" target="_blank" rel="noopener"><span>Scopus</span><b>↗</b><small>Author profile</small></a>
+        <a href="https://orcid.org/0000-0002-8413-2718" target="_blank" rel="noopener"><span>ORCID</span><b>↗</b><small>Researcher identifier</small></a>
+        <a href="https://github.com/sahinurlaskar" target="_blank" rel="noopener"><span>GitHub</span><b>↗</b><small>Code and research resources</small></a>
+        <a href="https://www.linkedin.com/in/dr-sahinur-rahman-laskar-0683ab1b0/" target="_blank" rel="noopener"><span>LinkedIn</span><b>↗</b><small>Professional profile</small></a>
+        <a href="https://vidwan.inflibnet.ac.in/profile/414530" target="_blank" rel="noopener"><span>VIDWAN</span><b>↗</b><small>Academic profile</small></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow">LET'S CONNECT</p><h2>Interested in research collaboration?</h2>
+        <p>I welcome academic discussions and collaborations related to NLP, machine translation, multilingual language technologies, LLM and low-resource languages.</p>
+        <a class="button light-button" href="mailto:sahinurlaskar.nits@gmail.com">sahinurlaskar.nits@gmail.com ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><span>© <span id="year"></span> Dr. Sahinur Rahman Laskar</span><span>Academic website · Dehradun, India</span></div><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
